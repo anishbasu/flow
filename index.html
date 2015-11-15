@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    #content{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    #chat-input{
+        width: 100%;
+    }
+</style>
+    <title>FlowChat</title>
+</head>
+<body id="content">
+<section>
+    <h2 style="border: 0; padding-left: .5em;">FlowChat</h2>
+    <button id="open-channel">Start New Chatroom</button>
+</section>
+    <table style="width: 100%;" id="channels-list">
+        <tr>
+            <td style="width: 80%"> Moderator</td>
+            <td>Join </td>
+        </tr>
+    </table>
+    <div>
+        <h2 style="display: block; font-size: 1em; text-align: center;">Text Chat</h2>
+        <div id="chat-output"></div>
+        <input type="text" id="chat-input" style="font-size: 1.2em;" placeholder="chat message" disabled>
+    </div>
+
+<script src="https://cdn.webrtc-experiment.com/DataChannel.js"> </script>
+<script src="https://cdn.webrtc-experiment.com/firebase.js"> </script>
+<script type="text/javascript" src="p2p.js"></script>
+
+</body>
+</html>
+
